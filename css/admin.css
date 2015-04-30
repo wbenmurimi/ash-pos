@@ -1,0 +1,97 @@
+#breadcrumbs{
+	margin-top: -30px;
+}
+html,body{
+	height: 1000px;
+}
+body {
+ padding-top: 40px; 
+}
+.nav-tabs > li{
+	margin-top: 20px;
+  padding-left:20px;
+  padding-right:10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+#try{
+	background-color: black;
+}
+#total_space{
+}
+#content{
+	background-color: grey;
+}
+#btnArea{
+	height: 60px;
+	margin-top: 0px;
+	text-align: right;
+	/*margin-right: 70px;*/
+}
+#logoutbtn{
+	margin-right: 10px;
+	margin-top: -8px;
+	margin-bottom: -12px;
+	text-align: right;
+}
+#admintop-style{
+	margin-right: 10px;
+	margin-top: -8px;
+	margin-bottom: -8px;
+	text-align: left;
+}
+
+.table-hover tbody tr:hover td {
+    background: aqua;
+}
+.img-responsive {
+    display: block;
+    width: 90%;
+    height:400px important!;
+    margin-left: 4%;
+    /*margin-top: 7%;*/
+    height: auto;
+}
+#item-details{
+	text-align: center;
+	color: blue;
+	font-weight: bold;
+}
+#admintop{
+	margin-top: -30px;
+	background-color: black;
+}
+#breadcrumb{
+	background-color: grey;
+	color: white;
+}
+#alltabs{
+	background-color: black;
+
+}
+.info{
+	background-color: black;
+}
+#admincontent{
+	background-color: black;
+}
+#left-nav{
+	margin-left: -20px;
+}
+
+#adminview{
+	text-align: center;
+	background-color: grey;
+	color: white;
+}
+#addform label{
+	padding-bottom: 20px;
+}
+#leftnavlinks a{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/*#topbar{
+	height: 30px;
+}*/
