@@ -28,7 +28,7 @@ function log_msg($level, $er_code, $msg, $mysql_msg){
 	return 0;
 }
 
-class adb {
+class base {
 
 	/**error description*/
     var $str_error;

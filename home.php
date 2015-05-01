@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -60,7 +59,7 @@
                         <div id="try"class="col-md-9">
                           <div class"row">
                             <div class="col-md-4">
-                              <div class="well">
+                              <div class="well" onclick="sellProduct(1)">
                                 <img src="images/tea.jpg " class="img-responsive">
                                 <div id="item-details">
                                   Tea</br>
@@ -247,7 +246,7 @@
                       <div class="col-md-3">
                         <div id="total_space"class="well">
                           <div class="table-responsive"> 
-                            <table class="table table-hover">
+                            <table id="saleTable" name="saleTable" class="table table-hover">
                               <thead>
                                 <tr>
                                   <th>Food</th>
@@ -257,12 +256,7 @@
                                 </tr>
                               </thead>
                               <tbody>
-                                <tr>
-                                  <th>w</th>
-                                  <th>e</th>
-                                  <th>r</th>
-                                  <th>t</th>
-                                </tr>
+
 
                               </tbody>
 
@@ -273,24 +267,24 @@
                             <div class="form-group">
                               <label for="name" class="col-lg-4">TOTAL:</label>
                               <div class="col-lg-8">
-                                <input class="form-control" name="name" id="name" type="text">
+                                <input class="form-control" name="totalprice" id="totalprice" type="text">
                               </div>
                             </div>
                             <div class="form-group">
                               <label for="name" class="col-lg-4">PAID:</label>
                               <div class="col-lg-8">
-                                <input class="form-control" name="name" id="name" type="text">
+                                <input class="form-control" name="paid" id="paid" type="text">
                               </div>
                             </div>
                             <div class="form-group">
                               <label for="name" class="col-lg-4">CHANGE:</label>
                               <div class="col-lg-8">
-                                <input class="form-control" name="name" id="name" type="text">
+                                <input class="form-control" name="change" id="change" type="text">
                               </div>
                             </div>
                           </div>
 
-                          <a class="btn btn-large btn-info">Submit</a>
+                          <a class="btn btn-large btn-info" onclick="transact()">Submit</a>
                         </div>
                       </div>
                     </div>
@@ -495,7 +489,7 @@
                         </div>
                       </div>
                     </div>
-                    <script src="jquery-2.1.3.js"></script>
+                    <script src="js/jquery-2.1.3.js"></script>
                     <div class= "modal fade" id="reverse" load="dialog">
                       <div class ="modal-dialog">
                         <div class="modal-content">
@@ -694,7 +688,7 @@
                           </div>
                         </div>
                       </div>
-                      <script src="jquery-2.1.3.js"></script>
+                      <script src="js/jquery-2.1.3.js"></script>
                       <div class= "modal fade" id="reverse" load="dialog">
                         <div class ="modal-dialog">
                           <div class="modal-content">
@@ -877,7 +871,8 @@
               <!-- </div> -->
 
               <!--Ofline JQuery-->
-              <script src="jquery-2.1.3.js"></script>
+              <script src="js/jquery-2.1.3.js"></script>
+              <script src="js/js.js"></script>
               <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
               <!-- Include all compiled plugins (below), or include individual files as needed -->

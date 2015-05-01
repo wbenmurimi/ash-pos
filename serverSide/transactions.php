@@ -3,15 +3,15 @@ include_once("base.php");
 
 class transactions extends base{
 //function to add a transaction in the database
-	function addTransaction($tran_id,$food_ids,$food_quantities,$food_prices,$total,$emp_id){
-		$sql="insert into transactions set transaction_id='$tran_id',food_ids='$food_ids',food_quantities='$food_quantities',food_prices='$food_prices',
+	function addTransaction($tran_id,$food_names,$food_quantities,$food_prices,$total,$emp_id){
+		$sql="insert into transactions set transaction_id='$tran_id',food_names='$food_names',food_quantities='$food_quantities',food_prices='$food_prices',
 		total_price='$total',employee_id='$emp_id'";
 
 		return $this->query($sql);
 	}
 //update a transaction Deprecated!!
-	function updateTransaction($tran_id,$food_ids,$food_quantities,$food_prices,$total,$emp_id){
-		$sql="update transactions set food_ids='$food_ids',food_quantities='$food_quantities',food_prices='$food_prices',
+	function updateTransaction($tran_id,$food_names,$food_quantities,$food_prices,$total,$emp_id){
+		$sql="update transactions set food_names='$food_names',food_quantities='$food_quantities',food_prices='$food_prices',
 		total_price='$total',employee_id='$emp_id' where transaction_id='$tran_id'";
 
 		return $this->query($sql);
@@ -49,8 +49,5 @@ class transactions extends base{
 
 		return $this->query($sql);
 	}
-
-	
-
 }
-?
+?>

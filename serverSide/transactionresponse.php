@@ -8,13 +8,13 @@ if (isset($_REQUEST['cmd'])){
 		$transact=new transactions();
 
 		$tranid=$_REQUEST['tranid'];
-		$foodsid=$_REQUEST['fids'];
+		$foodnames=$_REQUEST['fnames'];
 		$foodqty=$_REQUEST['fqty'];
 		$foodprice=$_REQUEST['fprice'];
 		$total=$_REQUEST['total'];
 		$empid=$_REQUEST['empid'];
 
-		$add=$transact->addTransaction($tranid,$foodsid,$foodqty,$foodprice,$total,$empid);
+		$add=$transact->addTransaction($tranid,$foodnames,$foodqty,$foodprice,$total,$empid);
 
 		if(!$add){
 			echo '{"result":0,"message":"Could not do a transaction"}';

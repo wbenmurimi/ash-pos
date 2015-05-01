@@ -12,7 +12,7 @@ if(isset($_REQUEST['cmd'])){
 			return;
 		}
 		$row=$food->fetchArray();
-		echo '{"result":1,foods:[';
+		echo '{"result":1,"foods":[';
 		while($row){
 			echo json_encode($row);
 			if($row=$food->fetchArray()){
@@ -33,7 +33,7 @@ if(isset($_REQUEST['cmd'])){
 			return;
 		}
 		$row=$food->fetchArray();
-		echo '{"result":1,foods:[';
+		echo '{"result":1,"foods":[';
 		while($row){
 			echo json_encode($row);
 			if($row=$food->fetchArray()){
@@ -48,11 +48,10 @@ if(isset($_REQUEST['cmd'])){
 		include_once("food.php");
 		$food=new food();
 		$fid=$_REQUEST['fid'];
-		echo '{"result":1,';
+	
 		echo json_encode($food->getFoodById($fid));
-		echo '}';
-
-	}
+		
+			}
 
 	function deleteFood(){
 		include_once("food.php");
@@ -77,7 +76,7 @@ if(isset($_REQUEST['cmd'])){
 			return;
 		}
 		$row=$food->fetchArray();
-		echo '{"result":1,foods:[';
+		echo '{"result":1,"foods":[';
 		while($row){
 			echo json_encode($row);
 			if($row=$food->fetchArray()){
