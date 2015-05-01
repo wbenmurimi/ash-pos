@@ -1,0 +1,33 @@
+.nav-tabs > li{
+	margin-top: 10px;
+	margin-left: 40px;
+  padding-left:50px;
+  padding-right:50;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.form-control {
+    min-width: 0;
+    width: 300px;
+}
+#loginForm{
+	margin-top: 70px;
+	width: 470px;
+}
+#positioninputs{
+	margin-left: 50px;
+}
+.pullright{
+	margin-right: 51px;
+	float: right;
+}
+.modal-header{
+	text-align: center;
+}
+#alignPopup{
+	margin-left: 30px;
+}
+#aligncancelbtn{
+	float: left;
+	margin-left: 10px;
+}
